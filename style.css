@@ -6,3 +6,8 @@ Description: How to create a boostrappy theme for WordPress
 Version: 1.0
 Text Domain: bootstrap-to-wp
 */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
