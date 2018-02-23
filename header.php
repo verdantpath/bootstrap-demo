@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title><?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
 
