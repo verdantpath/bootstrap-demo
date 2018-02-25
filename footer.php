@@ -5,7 +5,7 @@
 </main>
 
 <footer class="container">
-<p>&copy; Company 2017</p>
+<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date( 'Y' ); ?></p>
 </footer>
 
 <?php wp_footer(); ?>
