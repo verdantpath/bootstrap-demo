@@ -53,4 +53,6 @@ create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the Hom
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the Home page' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the Home page' );
 
+create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
+
 ?>
