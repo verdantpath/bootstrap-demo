@@ -60,3 +60,10 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
+.sidebar {
+  margin-top: 40px;
+  color: #444;
+}
+.sidebar h3 {
+  color: #888;
+}
