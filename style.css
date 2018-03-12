@@ -67,3 +67,6 @@ body {
 .sidebar h3 {
   color: #888;
 }
+article.post {
+  margin: 20px 0 40px;
+}
