@@ -13,10 +13,11 @@
 
               <article class="post">
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <hr>
-                <p>by <?php the_author(); ?> on <?php echo the_time('l, F jS, Y'); ?> in <?php the_category( ', ' ); ?>.  <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></p>
+                <p><em>by <?php the_author(); ?> on <?php echo the_time('l, F jS, Y'); ?> in <?php the_category( ', ' ); ?> - <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></em></p>
 
                 <?php the_excerpt(); ?>
+
+                <hr>
 
               </article>
 
