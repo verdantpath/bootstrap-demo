@@ -14,6 +14,10 @@
 
               <?php the_content(); ?>
 
+              <hr>
+
+              <?php comments_template(); ?>
+
             <?php endwhile; else : ?>
 
               <div class="page-header">
@@ -26,7 +30,7 @@
 
           </div>
 
-          <?php get_sidebar(); ?>
+          <?php get_sidebar('blog'); ?>
 
         </div>
 
