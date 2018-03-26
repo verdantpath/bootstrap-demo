@@ -47,6 +47,15 @@
 
           <div class="col-sm-3 portfolio-piece">
 
+            <?php
+
+            $thumbnail_id = get_post_thumbnail_id();
+            $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
+
+            ?>
+
+            <p><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo the_title(); ?> graphic"></p>
+
             <h3><?php the_title(); ?></h3>
 
           </div>
