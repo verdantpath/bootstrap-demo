@@ -73,3 +73,9 @@ article.post {
 .portfolio-piece img {
   max-width: 100%;
 }
+
+@media (max-width: 540px) {
+  .portfolio-piece h4 {
+    font-size: .8em;
+  }
+}
