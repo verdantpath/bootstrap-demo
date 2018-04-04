@@ -45,7 +45,7 @@
 
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 
-          <div class="col-sm-3 portfolio-piece">
+          <div class="col-xs-3 portfolio-piece">
 
             <?php
 
@@ -56,9 +56,11 @@
 
             <p><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo the_title(); ?> graphic"></p>
 
-            <h3><?php the_title(); ?></h3>
+            <h4><?php the_title(); ?></h4>
 
           </div>
+
+          <?php $portfolio_count = $the_query->current_post + 1; ?>
 
           <?php endwhile; endif; ?>
 
