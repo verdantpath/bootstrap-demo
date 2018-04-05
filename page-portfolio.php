@@ -54,14 +54,15 @@
 
             ?>
 
-            <p><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo the_title(); ?> graphic"></p>
+            <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo the_title(); ?> graphic"></a></p>
 
-            <h4><?php the_title(); ?></h4>
+            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
           </div>
 
           <?php $portfolio_count = $the_query->current_post + 1; ?>
-          <?php if ( $portfolio_count % 4 == 0); ?>
+          <?php if ( $portfolio_count % 4 == 0 ):  ?>
+          </div><div class="row">
 
           <?php endif; ?>
 
