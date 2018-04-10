@@ -37,9 +37,11 @@
         <div class="row">
 
           <?php
+            // GETS PASSED TO THE QUERY FILTER AND LOOKS FOR PORTFOLIO CUSTOM POST TYPE
             $args = array(
               'post_type' => 'portfolio'
             );
+            // QUERY FILTER THAT GETS THE PORTFOLIO CUSTOM POST TYPE
             $the_query = new WP_Query( $args );
           ?>
 
