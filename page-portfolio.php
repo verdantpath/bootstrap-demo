@@ -44,7 +44,7 @@
             // QUERY FILTER THAT GETS THE PORTFOLIO CUSTOM POST TYPE
             $the_query = new WP_Query( $args );
           ?>
-
+          <!-- THE WORDPRESS LOOP -->
           <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 
           <div class="col-xs-3 portfolio-piece">
