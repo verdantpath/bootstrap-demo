@@ -61,7 +61,7 @@
             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
           </div>
-
+          <!-- closes the row and starts a new row -->
           <?php $portfolio_count = $the_query->current_post + 1; ?>
           <?php if ( $portfolio_count % 4 == 0 ):  ?>
           </div><div class="row">
