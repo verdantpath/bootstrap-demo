@@ -1,24 +1,30 @@
-<?php
-  /*
-  Template Name: Full Width
-
-  */
-?>
-
 <?php get_header(); ?>
 
       <div class="container">
         <div class="row">
 
-          <div class="col-md-12">
+
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-              <div class="page-header">
-                <h1><?php the_title(); ?></h1>
+              <div class="col-md-8 portfolio-image">
+                <?php
+
+                $thumbnail_id = get_post_thumbnail_id();
+                $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
+
+                ?>
+                <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo the_title(); ?> graphic"></a></p>
+
+
               </div>
 
-              <?php the_content(); ?>
+              <div class="col-md-4">
+
+                <h1><?php the_title(); ?></h1>
+                <?php the_content(); ?>
+
+              </div>
 
             <?php endwhile; else : ?>
 
@@ -30,7 +36,7 @@
 
             <?php endif; ?>
 
-          </div>
+
 
         </div>
 
