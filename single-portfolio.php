@@ -1,13 +1,29 @@
 <?php get_header(); ?>
 
       <div class="container">
+
+          <div class="page-header">
+            <div class="row">
+
+            <div class="col-xs-9">
+              <h1>Portfolio</h1>
+            </div>
+            <div class="col-xs-3 prev-next">
+              <?php next_post_link( '%link', '<span class="glyphicon glyphicon-circle-arrow-left"></span>' ); ?>
+              <a href="<?php echo get_post_type_archive_link('portfolio'); ?>"><span class="glyphicon glyphicon-th"></span></a>
+              <?php previous_post_link( '%link', '<span class="glyphicon glyphicon-circle-arrow-right"></span>' ); ?>
+            </div>
+          </div>
+        </div>
+
+
         <div class="row">
 
 
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-              <div class="col-md-8 portfolio-image">
+              <div class="col-sm-8 portfolio-image">
                 <?php
 
                 $thumbnail_id = get_post_thumbnail_id();
@@ -19,7 +35,7 @@
 
               </div>
 
-              <div class="col-md-4">
+              <div class="col-sm-4">
 
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
