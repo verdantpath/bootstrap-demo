@@ -51,7 +51,7 @@
               <p>No content is appearing for this page!</p>
 
             <?php endif; ?>
-
+            <!-- end of the wordpress loop -->
 
 
         </div>
