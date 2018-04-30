@@ -39,6 +39,7 @@
 
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
+                <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>">View Final Piece <span class="glyphicon glyphicon-arrow-right"></span></a></p>
 
               </div>
 
