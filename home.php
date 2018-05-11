@@ -9,6 +9,14 @@
               <h1><?php wp_title(''); ?></h1>
             </div>
 
+            <?php
+            $args = array(
+              'post_type' => 'post',
+              'category_name' => 'featured'
+            );
+            $the_query = new WP_Query( $args );
+            ?>
+
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
