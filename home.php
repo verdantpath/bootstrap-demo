@@ -15,12 +15,18 @@
               'category_name' => 'featured'
             );
             $the_query = new WP_Query( $args );
+
             ?>
+
+            <?php endwhile; endif; ?>
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
+                <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post() ?>
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <?php endwhile; endif; ?>
+
               </ol>
 
               <!-- Wrapper for slides -->
