@@ -17,7 +17,7 @@
                 $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 
                 ?>
-                <img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>">
+                <div class="feature-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></div>
 
                 <p><em>by <?php the_author(); ?> on <?php echo the_time('l, F jS, Y'); ?> in <?php the_category( ', ' ); ?> - <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></em></p>
               </div>

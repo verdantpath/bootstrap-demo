@@ -70,6 +70,7 @@ body {
 article.post {
   margin: 20px 0 40px;
 }
+.feature-image img,
 .portfolio-piece img,
 .portfolio-image img {
   max-width: 100%;
